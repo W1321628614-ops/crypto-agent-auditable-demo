@@ -1,0 +1,51 @@
+{
+  "status": "READY_FOR_USER_APPROVAL",
+  "publication_authorized": false,
+  "remote_created": false,
+  "remote_added": false,
+  "pushed": false,
+  "published": false,
+  "original_private_project_modified": false,
+  "files_modified": [
+    ".gitignore",
+    "LICENSE_STATUS.md",
+    "README.md",
+    "docs/PORTFOLIO.md",
+    "docs/PUBLIC_AUDIT.md",
+    "docs/SECURITY.md",
+    "docs/VERIFICATION.md",
+    "pyproject.toml"
+  ],
+  "files_added": [
+    "LICENSE",
+    "README.zh-CN.md",
+    "THIRD_PARTY_NOTICES.md",
+    "docs/dependency_licenses.json",
+    "docs/task17g_tests.txt",
+    "docs/task17g_validation.json",
+    "docs/task17g_safety.json",
+    "docs/FINAL_REVIEW_zh.md"
+  ],
+  "runtime_code_modified": false,
+  "identity": {
+    "copyright_holder": "W1321628614-ops",
+    "git_name": "W1321628614-ops",
+    "git_email": "242327958+W1321628614-ops@users.noreply.github.com",
+    "connected_account_id_login_match": true,
+    "email_privacy_settings_user_confirmed": true,
+    "server_commit_attribution_exercised": false
+  },
+  "license": "MIT",
+  "third_party_notices_checked": true,
+  "automated_tests": 42,
+  "manual_semantic_review_completed": true,
+  "security_scope": "all publishable files, reachable history, all active objects and refs; local old Git archive excluded from publication",
+  "global_git_trust_modified": false,
+  "known_issues": [
+    "Local ownership may require explicit user review in non-elevated Git.",
+    "Other OS/Python combinations not independently tested.",
+    "Hashes are not OS isolation or signed authentication."
+  ],
+  "model_calls": 0,
+  "paid_API_calls": 0
+}

@@ -1,0 +1,49 @@
+
+STDERR
+test_actual_gap_risk_blocks_without_resizing (test_offline.OfflineTests.test_actual_gap_risk_blocks_without_resizing) ... ok
+test_ambiguous_entry_target_deferred (test_offline.OfflineTests.test_ambiguous_entry_target_deferred) ... ok
+test_both_brackets_adverse_first (test_offline.OfflineTests.test_both_brackets_adverse_first) ... ok
+test_cli_subprocess_restart (test_offline.OfflineTests.test_cli_subprocess_restart) ... ok
+test_complete_demo_without_model_or_network (test_offline.OfflineTests.test_complete_demo_without_model_or_network) ... ok
+test_costs_reduce_net (test_offline.OfflineTests.test_costs_reduce_net) ... ok
+test_duplicate_rejected (test_offline.OfflineTests.test_duplicate_rejected) ... ok
+test_freeze_preserves_original_bytes (test_offline.OfflineTests.test_freeze_preserves_original_bytes) ... ok
+test_future_reference_rejected_and_preserved (test_offline.OfflineTests.test_future_reference_rejected_and_preserved) ... ok
+test_future_tail_cannot_change_packet (test_offline.OfflineTests.test_future_tail_cannot_change_packet) ... ok
+test_gap_rejected (test_offline.OfflineTests.test_gap_rejected) ... ok
+test_import_tampering_stops (test_offline.OfflineTests.test_import_tampering_stops) ... ok
+test_input_tampering_stops (test_offline.OfflineTests.test_input_tampering_stops) ... ok
+test_invalid_ohlc_rejected (test_offline.OfflineTests.test_invalid_ohlc_rejected) ... ok
+test_journal_tampering_stops (test_offline.OfflineTests.test_journal_tampering_stops) ... ok
+test_lock_conflict_fails_closed (test_offline.OfflineTests.test_lock_conflict_fails_closed) ... ok
+test_long_limit_price_not_worse_than_limit (test_offline.OfflineTests.test_long_limit_price_not_worse_than_limit) ... ok
+test_long_stop (test_offline.OfflineTests.test_long_stop) ... ok
+test_long_stop_gap_execution (test_offline.OfflineTests.test_long_stop_gap_execution) ... ok
+test_long_target_next_open (test_offline.OfflineTests.test_long_target_next_open) ... ok
+test_mandatory_entry_same_bar_cancelled (test_offline.OfflineTests.test_mandatory_entry_same_bar_cancelled) ... ok
+test_mandatory_waiting_preserves_protection (test_offline.OfflineTests.test_mandatory_waiting_preserves_protection) ... ok
+test_naive_timestamp_rejected (test_offline.OfflineTests.test_naive_timestamp_rejected) ... ok
+test_nan_rejected (test_offline.OfflineTests.test_nan_rejected) ... ok
+test_natural_language_entry_rejected (test_offline.OfflineTests.test_natural_language_entry_rejected) ... ok
+test_no_trade_is_valid (test_offline.OfflineTests.test_no_trade_is_valid) ... ok
+test_nonfinite_answer_rejected_and_archived (test_offline.OfflineTests.test_nonfinite_answer_rejected_and_archived) ... ok
+test_partial_higher_candle_excluded (test_offline.OfflineTests.test_partial_higher_candle_excluded) ... ok
+test_pause_and_restart_resume (test_offline.OfflineTests.test_pause_and_restart_resume) ... ok
+test_real_data_rejected (test_offline.OfflineTests.test_real_data_rejected) ... ok
+test_request_tampering_stops (test_offline.OfflineTests.test_request_tampering_stops) ... ok
+test_risk_budget_rejected_without_resizing (test_offline.OfflineTests.test_risk_budget_rejected_without_resizing) ... ok
+test_risk_fraction_above_cap_rejected (test_offline.OfflineTests.test_risk_fraction_above_cap_rejected) ... ok
+test_short_limit_price_not_worse_than_limit (test_offline.OfflineTests.test_short_limit_price_not_worse_than_limit) ... ok
+test_short_stop (test_offline.OfflineTests.test_short_stop) ... ok
+test_short_target (test_offline.OfflineTests.test_short_target) ... ok
+test_spot_short_rejected (test_offline.OfflineTests.test_spot_short_rejected) ... ok
+test_stale_binding_rejected (test_offline.OfflineTests.test_stale_binding_rejected) ... ok
+test_unfilled_limit_expires (test_offline.OfflineTests.test_unfilled_limit_expires) ... ok
+test_unknown_event_class_defaults_mandatory (test_offline.OfflineTests.test_unknown_event_class_defaults_mandatory) ... ok
+test_utc_offset_normalized (test_offline.OfflineTests.test_utc_offset_normalized) ... ok
+test_valid_synthetic_bundle (test_offline.OfflineTests.test_valid_synthetic_bundle) ... ok
+
+----------------------------------------------------------------------
+Ran 42 tests in 0.739s
+
+OK

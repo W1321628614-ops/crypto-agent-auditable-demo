@@ -1,0 +1,49 @@
+{
+  "inventory": [
+    {
+      "name": "jsonschema",
+      "version": "4.26.0",
+      "license": "MIT",
+      "upstream": "https://github.com/python-jsonschema/jsonschema",
+      "role": "runtime dependency"
+    },
+    {
+      "name": "attrs",
+      "version": "26.1.0",
+      "license": "MIT",
+      "upstream": "https://github.com/python-attrs/attrs",
+      "role": "transitive dependency"
+    },
+    {
+      "name": "jsonschema-specifications",
+      "version": "2025.9.1",
+      "license": "MIT",
+      "upstream": "https://github.com/python-jsonschema/jsonschema-specifications",
+      "role": "transitive dependency"
+    },
+    {
+      "name": "referencing",
+      "version": "0.37.0",
+      "license": "MIT",
+      "upstream": "https://github.com/python-jsonschema/referencing",
+      "role": "transitive dependency"
+    },
+    {
+      "name": "rpds-py",
+      "version": "2026.9.1",
+      "license": "MIT",
+      "upstream": "https://github.com/crate-py/rpds",
+      "role": "transitive dependency"
+    },
+    {
+      "name": "setuptools",
+      "version": "84.0.0",
+      "license": "MIT",
+      "upstream": "https://github.com/pypa/setuptools",
+      "role": "build tool"
+    }
+  ],
+  "dependency_code_vendored": false,
+  "source": "installed distribution metadata and original root license files",
+  "new_dependency_downloads": false
+}

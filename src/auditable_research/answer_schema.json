@@ -1,0 +1,203 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "request_id",
+    "request_sha256",
+    "source",
+    "model_label",
+    "created_at",
+    "structure",
+    "direction",
+    "action",
+    "analysis_timeframe",
+    "execution_timeframe",
+    "references",
+    "plan",
+    "no_trade_reason",
+    "events"
+  ],
+  "properties": {
+    "request_id": {
+      "type": "string"
+    },
+    "request_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "source": {
+      "enum": [
+        "synthetic_model_output",
+        "external_manual"
+      ]
+    },
+    "model_label": {
+      "type": "string",
+      "minLength": 1
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "structure": {
+      "type": "string",
+      "minLength": 1
+    },
+    "direction": {
+      "enum": [
+        "bullish",
+        "bearish",
+        "unclear"
+      ]
+    },
+    "action": {
+      "enum": [
+        "long",
+        "short",
+        "no_trade"
+      ]
+    },
+    "analysis_timeframe": {
+      "enum": [
+        "15m",
+        "1h",
+        "4h",
+        "1d"
+      ]
+    },
+    "execution_timeframe": {
+      "enum": [
+        "15m",
+        "1h",
+        "4h",
+        "1d"
+      ]
+    },
+    "references": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "plan": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "entry_type",
+            "entry_price",
+            "quantity",
+            "stop_loss",
+            "take_profit",
+            "valid_bars",
+            "risk_fraction"
+          ],
+          "properties": {
+            "entry_type": {
+              "enum": [
+                "next_open",
+                "stop",
+                "limit"
+              ]
+            },
+            "entry_price": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "exclusiveMinimum": 0
+            },
+            "quantity": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "stop_loss": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "take_profit": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "valid_bars": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 1000
+            },
+            "risk_fraction": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            }
+          }
+        }
+      ]
+    },
+    "no_trade_reason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "classification",
+          "operator",
+          "price",
+          "timeframe",
+          "valid_bars",
+          "reason"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "classification": {
+            "enum": [
+              "mandatory_reassessment",
+              "observation_only",
+              null
+            ]
+          },
+          "operator": {
+            "enum": [
+              "gte",
+              "lte"
+            ]
+          },
+          "price": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "timeframe": {
+            "enum": [
+              "15m",
+              "1h",
+              "4h",
+              "1d"
+            ]
+          },
+          "valid_bars": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 1000
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

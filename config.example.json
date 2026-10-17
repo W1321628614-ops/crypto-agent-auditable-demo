@@ -1,0 +1,10 @@
+{
+  "initial_cash": 1000.0,
+  "fee_bps": 2.0,
+  "slippage_bps": 1.0,
+  "funding_bps": 0.0,
+  "warmup": 96,
+  "decision_every": 96,
+  "risk_cap": 0.02,
+  "notional_cap": 1.0
+}

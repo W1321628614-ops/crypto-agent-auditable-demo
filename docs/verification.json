@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "tests_summary": "valid_synthetic_bundle) ... ok\n\n----------------------------------------------------------------------\nRan 42 tests in 0.664s\n\nOK\n",
+  "wheel_sha256": "9fa5e48b4af30999cb5ddc179464e3d427307e77d2af9408af608a6bd275b33c",
+  "clean_venv_installed_wheel": true,
+  "restart": true,
+  "socket_blocked_demo": true,
+  "model_calls": 0,
+  "paid_API_calls": 0
+}

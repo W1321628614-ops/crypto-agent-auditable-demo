@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "auditable-research-demo"
+version = "1.0.0"
+description = "Auditable offline demonstration of supervised AI research and paper-trading infrastructure"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE", "LICENSE_STATUS.md", "THIRD_PARTY_NOTICES.md"]
+requires-python = ">=3.10"
+dependencies = ["jsonschema>=4.18,<5"]
+
+[project.scripts]
+research-demo = "auditable_research.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+auditable_research = ["answer_schema.json"]

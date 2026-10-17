@@ -1,0 +1,109 @@
+{
+  "status": "PASS",
+  "tested_platform": "Windows x64 / Python 3.13",
+  "installation": "fresh venv; README pip install .; package loaded from installed site-packages",
+  "readme_commands": "module and console entrypoint plus start/packet/import/advance/pause/status/resume/report passed",
+  "automated_tests": 42,
+  "skipped_tests": 0,
+  "restart_verified": true,
+  "socket_blocked_demo": true,
+  "closed_synthetic_trades": 1,
+  "data_and_answers": "synthetic fixtures only",
+  "model_calls": 0,
+  "paid_API_calls": 0,
+  "checks": {
+    "download_dependencies": {
+      "exit_code": 0,
+      "seconds": 22.629
+    },
+    "readme_install": {
+      "exit_code": 0,
+      "seconds": 2.52
+    },
+    "pip_check": {
+      "exit_code": 0,
+      "seconds": 0.25
+    },
+    "installed_origin": {
+      "exit_code": 0,
+      "seconds": 0.027
+    },
+    "readme_demo": {
+      "exit_code": 0,
+      "seconds": 0.238
+    },
+    "readme_restart_status": {
+      "exit_code": 0,
+      "seconds": 0.122
+    },
+    "readme_tests": {
+      "exit_code": 0,
+      "seconds": 0.859
+    },
+    "manual_start": {
+      "exit_code": 0,
+      "seconds": 0.116
+    },
+    "manual_packet": {
+      "exit_code": 0,
+      "seconds": 0.11
+    },
+    "prepare_mock_answer": {
+      "exit_code": 0,
+      "seconds": 0.102
+    },
+    "manual_import": {
+      "exit_code": 0,
+      "seconds": 0.118
+    },
+    "manual_advance": {
+      "exit_code": 0,
+      "seconds": 0.111
+    },
+    "manual_pause": {
+      "exit_code": 0,
+      "seconds": 0.113
+    },
+    "manual_status": {
+      "exit_code": 0,
+      "seconds": 0.108
+    },
+    "manual_resume": {
+      "exit_code": 0,
+      "seconds": 0.107
+    },
+    "manual_report": {
+      "exit_code": 0,
+      "seconds": 0.104
+    },
+    "console_entrypoint": {
+      "exit_code": 0,
+      "seconds": 0.152
+    },
+    "no_network_demo": {
+      "exit_code": 0,
+      "seconds": 0.193
+    }
+  },
+  "scope": "engineering and packaging verification, not market or AI-performance validation",
+  "dependencies": [
+    "setuptools==84.0.0",
+    "jsonschema==4.26.0",
+    "attrs==26.1.0",
+    "jsonschema-specifications==2025.9.1",
+    "referencing==0.37.0",
+    "rpds-py==2026.9.1"
+  ],
+  "raw_logs_stored_outside_repository": true,
+  "source_runtime_hashes": {
+    "src/auditable_research/answer_schema.json": "fe32602000aedb7e17f852445b6bdc4ec29725a27234a74f9fc4c4ac65c6e2fd",
+    "src/auditable_research/cli.py": "b761276ff95a480b6e698772a492b8efe508e05099376db6837af65b85d1a7db",
+    "src/auditable_research/engine.py": "bd48a5f166b2ea437ada47bedd22ce5115faa92afdc66a32c902bd569160d4a7",
+    "src/auditable_research/fixtures.py": "748f7ba855c1ad1748bd32713971b58361b718c5fa31fb45dbe568dd43de5dce",
+    "src/auditable_research/journal.py": "70d20ebfe90396e119c7fb5f83bedc99d6aefe67c7d19c30b0a178c04f97391d",
+    "src/auditable_research/matching.py": "c689721ac2d894c7ffbaaf411c3d300648c5c002a70b850e47b6c093ba1ed271",
+    "src/auditable_research/provenance.py": "9579536a65a5cf42c03b33abce5fac8f993e5c8f8a84b110170649636b620417",
+    "src/auditable_research/__init__.py": "27e8febb48ada44153ea2add9969a2c50a9831a74d9755fdd53c549a888b1cc2",
+    "src/auditable_research/__main__.py": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4"
+  }
+}
